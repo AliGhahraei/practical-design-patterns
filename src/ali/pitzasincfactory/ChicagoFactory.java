@@ -1,8 +1,6 @@
 package ali.pitzasincfactory;
 
-/**
- * Class ChicagoFactory
- */
+/** Class ChicagoFactory. */
 public class ChicagoFactory extends Factory {
 
   //
@@ -13,14 +11,14 @@ public class ChicagoFactory extends Factory {
   //
   // Constructors
   //
-  public ChicagoFactory () { }
+  public ChicagoFactory() { }
   
   //
   // Methods
   //
   @Override
   public Pizza cookPizza(String pizza) {
-    switch (pizza){
+    switch (pizza) {
       case "hawaiian":
         return new ChicagoHawaiianPizza(new String[]{"pineapple, ham, cheese"});
       case "pepperoni":

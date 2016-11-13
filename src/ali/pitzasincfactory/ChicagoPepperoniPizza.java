@@ -1,8 +1,6 @@
 package ali.pitzasincfactory;
 
-/**
- * Class ChicagoPepperoniPizza
- */
+/** Class ChicagoPepperoniPizza. */
 public class ChicagoPepperoniPizza extends Pizza {
 
   //
@@ -13,7 +11,7 @@ public class ChicagoPepperoniPizza extends Pizza {
   //
   // Constructors
   //
-  public ChicagoPepperoniPizza (String[] ingredients) {
+  public ChicagoPepperoniPizza(String[] ingredients) {
     super(ingredients);
   }
 

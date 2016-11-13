@@ -19,19 +19,20 @@
 
 package ali.pitzasincfactory;
 
-/**
- * Created by ali on 11/12/16
- */
+/** Test Class. */
 public class Main {
-  public static void main(String args[]){
-    Factory testNYFactory = new NYFactory();
+  /** Main method.
+   *
+   * @param args command line arguments.
+   */
+  public static void main(String [] args) {
+    Factory testNewYorkFactory = new NYFactory();
+    testNewYorkFactory.preparePizza("hawaiian");
+    System.out.println();
+    testNewYorkFactory.preparePizza("pepperoni");
+    System.out.println();
+
     Factory testChicagoFactory = new ChicagoFactory();
-
-    testNYFactory.preparePizza("hawaiian");
-    System.out.println();
-
-    testNYFactory.preparePizza("pepperoni");
-    System.out.println();
     testChicagoFactory.preparePizza("veggie");
     System.out.println();
   }

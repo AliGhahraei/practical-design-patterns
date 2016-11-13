@@ -1,8 +1,6 @@
 package ali.pitzasincfactory;
 
-/**
- * Class NYFactory
- */
+/** Class NYFactory. */
 public class NYFactory extends Factory {
 
   //
@@ -13,7 +11,7 @@ public class NYFactory extends Factory {
   //
   // Constructors
   //
-  public NYFactory () { }
+  public NYFactory() { }
 
   //
   // Methods

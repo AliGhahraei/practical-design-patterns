@@ -1,9 +1,7 @@
 package ali.pitzasincfactory;
 
-/**
- * Class Factory
- */
-abstract public class Factory {
+/** Class Factory. */
+public abstract class Factory {
 
   //
   // Fields
@@ -13,12 +11,17 @@ abstract public class Factory {
   //
   // Constructors
   //
-  public Factory () { }
+  public Factory() { }
   
   //
   // Methods
   //
-  public void preparePizza(String pizza){
+
+  /** Builder method for a pizza.
+   *
+   * @param pizza the desired pizza. This is sent to cookPizza (factory method)
+   */
+  void preparePizza(String pizza) {
     Pizza cookedPizza = cookPizza(pizza);
 
     System.out.println("Preparing " + cookedPizza.toString());
@@ -30,6 +33,11 @@ abstract public class Factory {
     System.out.println("Putting the pizza in its box");
   }
 
+  /** Factory method to cook pizzas.
+   *
+   * @param pizza the desired pizza. Concrete factories decide how to process pizza selection
+   * @return an instance of a pizza. Concrete factories determine the pizza.
+   */
   public abstract Pizza cookPizza(String pizza);
 
   //
