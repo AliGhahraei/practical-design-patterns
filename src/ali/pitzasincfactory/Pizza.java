@@ -8,7 +8,6 @@ abstract public class Pizza {
   //
   // Fields
   //
-
   
   //
   // Constructors
@@ -18,7 +17,10 @@ abstract public class Pizza {
   //
   // Methods
   //
-
+  @Override
+  public String toString(){
+    return getClass().getSimpleName();
+  }
 
   //
   // Accessor methods
