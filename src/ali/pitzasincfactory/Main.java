@@ -29,8 +29,6 @@ public class Main {
 
     testNYFactory.preparePizza("hawaiian");
     System.out.println();
-    testChicagoFactory.preparePizza("hawaiian");
-    System.out.println();
 
     testNYFactory.preparePizza("pepperoni");
     System.out.println();
