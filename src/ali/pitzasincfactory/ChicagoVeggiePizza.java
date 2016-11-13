@@ -13,7 +13,9 @@ public class ChicagoVeggiePizza extends Pizza {
   //
   // Constructors
   //
-  public ChicagoVeggiePizza () { }
+  public ChicagoVeggiePizza (String[] ingredients) {
+    super(ingredients);
+  }
   
   //
   // Methods

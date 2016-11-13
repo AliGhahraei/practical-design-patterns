@@ -22,11 +22,11 @@ public class NYFactory extends Factory {
   public Pizza cookPizza(String pizza) {
     switch (pizza){
       case "hawaiian":
-        return new NYHawaiianPizza();
+        return new NYHawaiianPizza(new String[]{"pineapple, ham, cheese"});
       case "pepperoni":
-        return new NYPepperoniPizza();
+        return new NYPepperoniPizza(new String[]{"pepperoni, cheese"});
       case "veggie":
-        return new NYVeggiePizza();
+        return new NYVeggiePizza(new String[]{"onion, tomato, jalapeno"});
       default:
         return null;
     }

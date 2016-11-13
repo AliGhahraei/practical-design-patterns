@@ -13,8 +13,10 @@ public class ChicagoPepperoniPizza extends Pizza {
   //
   // Constructors
   //
-  public ChicagoPepperoniPizza () { }
-  
+  public ChicagoPepperoniPizza (String[] ingredients) {
+    super(ingredients);
+  }
+
   //
   // Methods
   //

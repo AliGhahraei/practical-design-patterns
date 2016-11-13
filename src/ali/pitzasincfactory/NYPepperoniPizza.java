@@ -13,7 +13,9 @@ public class NYPepperoniPizza extends Pizza {
   //
   // Constructors
   //
-  public NYPepperoniPizza () { }
+  public NYPepperoniPizza (String[] ingredients) {
+    super(ingredients);
+  }
   
   //
   // Methods
